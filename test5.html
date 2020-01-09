@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+	<body>
+		<div id="app1">
+			
+			<a v-bind:href="url">{{name}}</a>
+			<button @click="click1">{{anniu1}}</button>
+			<button @click="click2">{{anniu2}}</button>
+		</div>
+		
+	</body>
+	<script type="text/javascript">
+		var vm = new Vue({
+			el:"#app1",
+			data:{
+				name:"百度",
+				url:"https://www.baidu.com",
+				anniu1:"hhhhhhhh",
+				anniu2:"gggggggg"
+			},
+			methods:{
+				click1:function(){
+					alert("click1fun")
+				},
+				click2:function(){
+					alert("click2fun")
+				}
+			}
+		})
+	</script>
+</html>
