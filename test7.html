@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+	<body>
+		<div id="app7">
+			<button v-on:click="click1(hehe)">button</button><br />
+			<button v-on:dblclick="count+=1">button2</button>
+			<span>{{count}}</span>
+		</div>
+	</body>
+	<script type="text/javascript">
+		var vm = new Vue({
+			el:"#app7",
+			data:{
+				count:0,
+				hehe:"hahaha"
+			},
+			methods:{
+				click1:function(args){
+					alert(args);
+				}
+			}
+		})
+	</script>
+</html>
